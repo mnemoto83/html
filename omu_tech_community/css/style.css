@@ -49,10 +49,11 @@ header {
 }
 
 .header-navigation li a:hover{
-   opacity: 0.6;
+  transition: all 0.5s;
+  opacity: 0.5;
 }
 
-
+/* mainセクション */
 .container {
   width: 870px;
   height: auto;
@@ -74,6 +75,7 @@ header {
   border-radius: 15px; 
 }
 
+/* 最新情報 */
 .card-title {
   font-weight: 700;
   font-size: 22px;
@@ -89,10 +91,11 @@ header {
   margin-bottom: 10px;
 }
 
-.information-date {
+.information-list li .information-date {
   margin-right: 30px;
 }
 
+/* ユーザー情報 */
 .user-items {
   margin-top: 32px;
   display: flex;
@@ -109,35 +112,34 @@ header {
 .user-items .item img {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
 }
 
 .user-items .item .username {
   color: #818181;
   margin: 10px auto;
-  font-size: 18px;
 }
 
-.profile-img {
-  border-radius: 50%;
-}
-
-.user-detail {
+.user-items .item .user-detail {
     color: #fff;
     border: none;
     background: #58c1bc;
 
-    padding: 5px 20px;
-    width: 110px;
-
+    width: 123px;
+    height: auto;
+    line-height: 28px;
+    
     border-radius: 5px;
     
-    font-size: 16px;
+    cursor: pointer;
 }
 
-.user-detail:hover{
-   opacity: 0.6;
+.user-items .item .user-detail:hover{
+  transition: all 0.5s;
+  opacity: 0.5;
 }
 
+/* フッターセクション */
 footer {
   background-color: #818181;
   height: 100px;
