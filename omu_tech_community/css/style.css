@@ -16,6 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
 
 .logo {
@@ -29,11 +31,12 @@ header {
 }
 
 .header-navigation {
+  display: flex;
   margin-right: 5px;
 }
 
 .header-navigation li {
-  padding: 0 30px;
+  padding: 0 10px;
   text-align: center;
   list-style-type: none;
 }
@@ -41,9 +44,14 @@ header {
 .header-navigation li a {
   color: #333;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
 }
+
+.header-navigation li a:hover{
+   opacity: 0.6;
+}
+
 
 .container {
   width: 870px;
@@ -61,6 +69,9 @@ header {
   display: block;
   margin: 30px 0;
   background-color: #fff;
+  
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  border-radius: 15px; 
 }
 
 .card-title {
@@ -78,6 +89,9 @@ header {
   margin-bottom: 10px;
 }
 
+.information-date {
+  margin-right: 30px;
+}
 
 .user-items {
   margin-top: 32px;
@@ -100,8 +114,29 @@ header {
 .user-items .item .username {
   color: #818181;
   margin: 10px auto;
+  font-size: 18px;
 }
 
+.profile-img {
+  border-radius: 50%;
+}
+
+.user-detail {
+    color: #fff;
+    border: none;
+    background: #58c1bc;
+
+    padding: 5px 20px;
+    width: 110px;
+
+    border-radius: 5px;
+    
+    font-size: 16px;
+}
+
+.user-detail:hover{
+   opacity: 0.6;
+}
 
 footer {
   background-color: #818181;
